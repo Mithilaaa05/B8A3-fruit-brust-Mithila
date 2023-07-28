@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Brust</title>
+    <link rel="icon" href="images/logo.png">
+
     <!-- tailwind and daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -23,6 +25,7 @@
           }
         }
       </script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <style>
         .font-lato{
             font-family: 'Lato', sans-serif;
@@ -31,11 +34,163 @@
     
 </head>
 <body class="font-lato">
-    <header>
+    <header class="container mx-auto py-12 px-60">
+        <div class="navbar bg-red-500 rounded-full">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <ul class="flex gap-4 text-[#FFFFFF]">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li>All Fruits</li>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar-center">
+              <img src="images/logo.png" alt="" class="">
+              <a class="btn btn-ghost normal-case text-xl text-[#FFFFFF]">Fruit Brust</a>
+            </div>
+            <div class="navbar-end">
+                <div class="form-control rounded-full justify-between flex">
+                    <div class="flex">
+                      <div>
+                        <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto "/>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </div>
+                </div>
 
+            </div>
+          </div>
+        <!-- container -->
+
+            <div class="carousel py-12 rounded-lg">
+              <div id="slide1" class="carousel-item relative w-full">
+
+                <div class="hero max-h-screen bg-white rounded-lg" >
+                  <img src="images/banner1.png" class="w-full rounded-lg">
+                  <div class="hero-overlay bg-capacity-30"></div>
+                  <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                      <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your doorstep</h1>
+                      <p class="mb-5">We supply highly quality organic products</p>
+                      <button class="btn bg-red-500 text-[#FFFFFF]">Shop Now</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide4" class="btn btn-circle">❮</a> 
+                  <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+
+
+
+
+                
+              </div> 
+              <div id="slide2" class="carousel-item relative w-full">
+                <div class="hero max-h-screen w-full rounded-2xl bg-white" style="background-image: url(images/banner2.png);">
+                  <div class="hero-overlay bg-capacity-30"></div>
+                  <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                      <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your doorstep</h1>
+                      <p class="mb-5">We supply highly quality organic products</p>
+                      <button class="btn bg-red-500 text-[#FFFFFF]">Shop Now</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide1" class="btn btn-circle">❮</a> 
+                  <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+              <div id="slide3" class="carousel-item relative w-full">
+                <div class="hero max-h-screen w-full rounded-2xl bg-white" style="background-image: url(images/banner3.png);">
+                  <div class="hero-overlay bg-capacity-30"></div>
+                  <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                      <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your doorstep</h1>
+                      <p class="mb-5">We supply highly quality organic products</p>
+                      <button class="btn bg-red-500 text-[#FFFFFF]">Shop Now</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide2" class="btn btn-circle">❮</a> 
+                  <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+              <div id="slide4" class="carousel-item relative w-full">
+                <div class="hero max-h-screen w-full rounded-2xl bg-white" style="background-image: url(images/banner4.png);">
+                  <div class="hero-overlay bg-capacity-30"></div>
+                  <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                      <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your doorstep</h1>
+                      <p class="mb-5">We supply highly quality organic products</p>
+                      <button class="btn bg-red-500 text-[#FFFFFF]">Shop Now</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide3" class="btn btn-circle">❮</a> 
+                  <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+              </div>
+            </div>
+        <!-- bonus -->
+      <!-- <div class="bg-white flex gap-4 -pt-12 box-border">
+        <img src="images/fruit1.png" alt="">
+        <img src="images/fruit2.png" alt="">
+        <img src="images/fruit3.png" alt="">
+        <img src="images/fruit4.png" alt="">
+        <img src="images/fruit5.png" alt="">
+      </div> -->
+        
+    
     </header>
-    <main>
 
+    <main>
+      <div class="flex justify-between">
+        <div class="text-[#121212] ">
+          <div class="font-semibold text-5xl">
+            <h2>Deal of the day</h2>
+          </div>
+          <div class="font-light">
+            <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 font-bold text-3xl">
+          <div>
+            <div class="flex flex-col w-1/12 ">
+            <div class="grid h-8 card  rounded-box place-items-center">29:</div> 
+            <div class="divider"></div> 
+            <div class="grid h-8 card rounded-box place-items-center">Days</div>
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-col w-1/12">
+            <div class="grid h-8 card  rounded-box place-items-center">15:</div> 
+            <div class="divider"></div> 
+            <div class="grid h-8 card  rounded-box place-items-center">Houss</div>
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-col w-1/12">
+            <div class="grid h-8 card rounded-box place-items-center">18:</div> 
+            <div class="divider"></div> 
+            <div class="grid h-8 card  rounded-box place-items-center">Minutes</div>
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-col w-1/12">
+            <div class="grid h-8 card  rounded-box place-items-center">05:</div> 
+            <div class="divider"></div> 
+            <div class="grid h-8 card  rounded-box place-items-center">Seconds</div>
+            </div>
+          </div>
+
+        </div>
+      <div>
     </main>
     <footer>
 
